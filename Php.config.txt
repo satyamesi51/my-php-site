@@ -1,0 +1,16 @@
+<?php
+// Database connection settings (har website par alag ho sakte hain)
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "education_portal";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
